@@ -1,0 +1,8 @@
+Enter mobile number to send feedback form:
+
+<%= form_for :anything, url: "/sms" do |form| %>
+  <%= form.text_field :number %>
+  <%= form.hidden_field :url, value: @form.url %>
+  <%= form.submit "Send SMS"  %>
+<% end  %>
+
